@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Buku</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .box{
+        border:transparent;
+        min-height: 50px;
+    }
+    .boxkecilheader{
+        border: 1px solid rgb(255, 255, 255);
+        height: 30px;
+        margin:10px;
+    }
+
+    .boxkecilbanner{
+        border: 1px solid #F4CE47;
+        height: 30px;
+        margin:10px;
+        width:100px;
+    }
+
+    .boxkecilbuku{
+        border: 1px solid rgb(192, 191, 191);
+        height: 30px;
+    }
+
+    .boxbanner{
+        height:40px;
+    }
+
+    .boxbuku{
+        background-color: white;
+        width: 100px;
+    }
+
+    .boxgambarbuku{
+        border: 1px solid rgb(192, 191, 191);
+        height:100px;
+    }
+
+    .boxbutton{
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="box" style="display: flex; flex-direction: column;background-color: rgb(255, 255, 255);gap: 10px;">
+        <!--section 1-->
+        <div class=" box">
+            <!--kotak dalam 1-->
+            <div class="box" style="margin: 10px 50px 0px 50px;background-color: #2A2C2E;display: flex; flex-direction: row;justify-content: space-evenly;align-items: center;">
+            
+                <!-- kotak kecil dalam -->
+                <div class="boxkecilheader" style="width:100px;"></div>
+                <div class="boxkecilheader" style="width:500px;"></div>
+                <div class="boxkecilheader" style="width:100px;"></div>
+                <div class="boxkecilheader" style="width:100px;"></div>
+                
+            </div>
+        </div>
+
+        <!-- section 2-->
+        <div class=" boxbanner" style="display: flex; flex-direction: row;background-color: #F4CE47;justify-content: space-between;align-items: center;">
+            <div class="boxkecilbanner"></div>
+            <div class="boxkecilbanner"></div>
+            <div class="boxkecilbanner"></div>
+            <div class="boxkecilbanner"></div>
+            <div class="boxkecilbanner"></div>
+        </div>
+
+        <!-- section 3-->
+        <div class=" box" style="display: flex; flex-direction: column;background-color: #2A2C2E;">
+            <!-- setiap row ada 3 kotak -->
+            
+            <!-- row 1 -->
+            <div class="box" style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+            
+                <!-- 3 kotak dalam setiap row-->
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                <!-- kotak #1-->
+                    <div class="boxgambarbuku" style="margin:10px;"></div>
+                    <div class="boxbutton" style="display: flex;flex-direction: row;">
+                        <div class="boxkecilbuku">b1</div>
+                        <div class="boxkecilbuku">b2</div>
+                    </div>
+                </div>
+
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                <!--  kotak #2-->
+                    <div class="boxgambarbuku" style="margin:10px;"></div>
+                    <div class="boxbutton" style="display: flex;flex-direction: row;">
+                        <div class="boxkecilbuku">b1</div>
+                        <div class="boxkecilbuku">b2</div>
+                    </div>
+                </div>
+
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                <!-- kotak #3-->
+                    <div class="boxgambarbuku" style="margin:10px;"></div>
+                    <div class="boxbutton" style="display: flex;flex-direction: row;">
+                        <div class="boxkecilbuku">b1</div>
+                        <div class="boxkecilbuku">b2</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="box" style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+            <!-- 3 kotak dalam setiap row-->
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                <!-- kotak #4-->
+                    <div class="boxgambarbuku" style="margin:10px;"></div>
+                    <div class="boxbutton" style="display: flex;flex-direction: row;">
+                        <div class="boxkecilbuku">b1</div>
+                        <div class="boxkecilbuku">b2</div>
+                    </div>
+                </div>
+
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                <!--  kotak #5-->
+                    <div class="boxgambarbuku" style="margin:10px;"></div>
+                    <div class="boxbutton" style="display: flex;flex-direction: row;">
+                        <div class="boxkecilbuku">b1</div>
+                        <div class="boxkecilbuku">b2</div>
+                    </div>
+                </div>
+
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                <!-- kotak #6-->
+                    <div class="boxgambarbuku" style="margin:10px;"></div>
+                    <div class="boxbutton" style="display: flex;flex-direction: row;">
+                        <div class="boxkecilbuku">b1</div>
+                        <div class="boxkecilbuku">b2</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row 3 -->
+            <div class="box" style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                    <!-- kotak #7-->
+                        <div class="boxgambarbuku" style="margin:10px;"></div>
+                        <div class="boxbutton" style="display: flex;flex-direction: row;">
+                            <div class="boxkecilbuku">b1</div>
+                            <div class="boxkecilbuku">b2</div>
+                        </div>
+                    </div>
+    
+                    <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                    <!--  kotak #8-->
+                        <div class="boxgambarbuku" style="margin:10px;"></div>
+                        <div class="boxbutton" style="display: flex;flex-direction: row;">
+                            <div class="boxkecilbuku">b1</div>
+                            <div class="boxkecilbuku">b2</div>
+                        </div>
+                    </div>
+    
+                    <div class="boxbuku" style="margin: 10px;display:flex;flex-direction: column;">
+                    <!-- kotak #9-->
+                        <div class="boxgambarbuku" style="margin:10px;"></div>
+                        <div class="boxbutton" style="display: flex;flex-direction: row;">
+                            <div class="boxkecilbuku">b1</div>
+                            <div class="boxkecilbuku">b2</div>
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+
+        <!-- section 4-->
+        <div class=" box" style="background-color: rgb(255, 255, 255);">
+            
+            <!-- kotak dalam 4-->
+            <div class="box" style="margin: 10px 50px 0px 50px;background-color: #2A2C2E;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+            
+                <!--kotak kecil dalam-->
+                <div class="boxkecilheader" style="margin: 10px; width:100px;"></div>
+                <div class="boxkecilheader" style="margin: 10px;width:100px;"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
