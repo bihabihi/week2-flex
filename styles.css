@@ -216,8 +216,8 @@ footer > .container > .bottom {
 
     /*nav */
     nav {
-        justify-content: center;
-        align-items: center;
+    white-space: nowrap;
+    margin-bottom: 16px;
     }
     
     /* main */
@@ -226,6 +226,21 @@ footer > .container > .bottom {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    /* footer */
+    footer > .container {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        gap: 32px;
+    }
+
+    footer > .container > .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
     }
 }
 
