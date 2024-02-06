@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background: #f9f9f9;
+}
+
+/* HEADER */
+
+header {
+    padding: 16px 0;
+}
+
+header > .container {
+    background-color: #2A2C2E;
+    width: 1200px;
+    height: 96px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .container > div {
+    color: #FFFFFF;
+}
+
+header > .container > .kiri > img {
+    width: 166px;
+    height: auto;
+}
+
+header > .container > .tengah > ul {
+    list-style: none; /* hilangkan button */
+    color: #FFFFFF80;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    /* kalau nak ada gap */
+    gap: 32px;
+}
+
+/* books jadi kuning */
+header > .container > .tengah > ul > li.active {
+    color: #F4D867;
+}
+
+header > .container > .kanan {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+}
+
+header > .container > .kanan > button {
+    /* button memang dah ada style dia sendiri */
+    /* so mana2 yang dah ada kena buat macam ni */
+    all: unset;
+    background-color: #F4D867;
+    color: #2A2C2E;
+    padding: 16px 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/* NAV KUNING */
+nav {
+    height: 80px;
+    background-color: #F4D867;
+    color: #F4BA30;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+nav > h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+nav > h2.active {
+    color: #2A2C2E;
+}
+
+/* MAIN */
+main {
+    background-color: #2A2C2E;
+}
+
+main > .container {
+    width: 898px;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+    /* awalnya compress 9 in one row so macam ni */
+    flex-wrap:wrap;
+    gap: 8px;
+    padding: 16px 0;
+}
+
+main > .container > .card {
+    height: 577px; /*kalau auto, dia akan membesar ikut size content */
+    width: 294px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 16px;
+}
+
+main > .container > .card > img {
+    width: 100%; /* daripada parent dia */
+    height: 357px;
+    /*object-fit: cover; supaya tak squashed*/
+    object-position: top;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+main > .container > .card > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+}
+
+main > .container > .card > .content > div > p:first-child {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #00000060;
+}
+
+main > .container > .card > .content > div > p:last-child {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+main > .container > .card > .content > .price > span:first-child {
+    color: #00000038;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: white;
+    color: white;
+    padding-top: 32px;
+}
+
+footer > .container {
+    background-color: #2A2C2E;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer > .container > .bottom {
+    background-color: #00000080;
+}
+
+footer > .container > .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+footer > .container > .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+@media (max-width: 750px) {
+    
+    /* header */
+    header {
+        padding: 0px;
+        padding-bottom: 16px;
+    }
+    header > .container {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        gap: 32px;
+    }
+
+    header > .container > .tengah > ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*nav */
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* main */
+    main > .container{
+        width: 430px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
